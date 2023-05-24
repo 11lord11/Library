@@ -1,0 +1,6 @@
+D:\С#\SerializationLibrary\bin\Debug\SerializationLibrary.dll
+D:\С#\SerializationLibrary\bin\Debug\SerializationLibrary.pdb
+D:\С#\SerializationLibrary\obj\Debug\SerializationLibrary.csproj.AssemblyReference.cache
+D:\С#\SerializationLibrary\obj\Debug\SerializationLibrary.csproj.CoreCompileInputs.cache
+D:\С#\SerializationLibrary\obj\Debug\SerializationLibrary.dll
+D:\С#\SerializationLibrary\obj\Debug\SerializationLibrary.pdb

@@ -1,0 +1,24 @@
+﻿<Window x:Class="MVVM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:local="clr-namespace:MVVM"
+        Title="Text Editor" Height="350" Width="525">
+    <Window.DataContext>
+        <local:MainViewModel />
+    </Window.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ToolBar Grid.Row="0" Margin="0,0,0,5">
+            <Button Content="New" Style="{DynamicResource CustomButtonStyle1}" Command="{Binding NewCommand}"/>
+            <Button Content="Open" Style="{DynamicResource CustomButtonStyle2}" Command="{Binding OpenCommand}"/>
+            <Button Content="Save" Style="{DynamicResource CustomButtonStyle3}" Command="{Binding SaveCommand}"/>
+            <Button Content="Gen" Style="{DynamicResource CustomButtonStyle4}" Command="{Binding GenCommand}"/>
+            <Button Content="Img" Style="{DynamicResource CustomButtonStyle5}" Command="{Binding ImgCommand}"/>
+        </ToolBar>
+        <TextBox Grid.Row="1" TextWrapping="Wrap" Text="{Binding Text, UpdateSourceTrigger=PropertyChanged}" VerticalScrollBarVisibility="Auto" AcceptsReturn="True"/>
+    </Grid>
+</Window>
